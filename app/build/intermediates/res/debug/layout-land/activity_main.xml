@@ -57,4 +57,4 @@
         android:layout_alignTop="@+id/submitfact"
         android:layout_alignLeft="@+id/randomfact"
         android:layout_alignStart="@+id/randomfact" />
-</RelativeLayout><!-- From: file:/Users/evaN/Dropbox/LearnMeApp/LearnMe/app/src/main/res/layout-land/activity_main.xml -->
+</RelativeLayout><!-- From: file:/Users/evaN/Desktop/LearnMeAppGit/LearnMeApp/app/src/main/res/layout-land/activity_main.xml -->
