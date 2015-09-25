@@ -2,39 +2,39 @@
 <items version="2" >
 
     <item
-        jar="/Users/evaN/.gradle/caches/modules-2/files-2.1/com.mcxiaoke.volley/library/1.0.17/f417d7f776d1ee5858fc04d9362aa45e9bedd26b/library-1.0.17.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="f417d7f776d1ee5858fc04d9362aa45e9bedd26b">
-        <dex dex="/Users/evaN/Desktop/LearnMeAppGit/LearnMeApp/app/build/intermediates/pre-dexed/debug/library-1.0.17-571332a7deacba008b5e6384f6c44c0330a1a2e9.jar" />
-    </item>
-    <item
-        jar="/Users/evaN/Desktop/LearnMeAppGit/LearnMeApp/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/libs/internal_impl-22.2.1.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
-        <dex dex="/Users/evaN/Desktop/LearnMeAppGit/LearnMeApp/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.1-8548a9c302ea053e642d0ad68a59f6865c6dbee0.jar" />
-    </item>
-    <item
-        jar="/Users/evaN/Desktop/LearnMeAppGit/LearnMeApp/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/classes.jar"
+        jar="Z:\Android\LearnMeApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="f8efd0096475e0daf054267b61544e10dc776503">
-        <dex dex="/Users/evaN/Desktop/LearnMeAppGit/LearnMeApp/app/build/intermediates/pre-dexed/debug/classes-959854c5269ad74d4929b0649c9a8f7db140289b.jar" />
+        <dex dex="Z:\Android\LearnMeApp\app\build\intermediates\pre-dexed\debug\classes-b6d2ced008da1fb4c8e021dff965988da4fa6e89.jar" />
     </item>
     <item
-        jar="/Users/evaN/Desktop/LearnMeAppGit/LearnMeApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/jars/classes.jar"
+        jar="C:\Users\evan\.gradle\caches\modules-2\files-2.1\com.mcxiaoke.volley\library\1.0.17\f417d7f776d1ee5858fc04d9362aa45e9bedd26b\library-1.0.17.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f417d7f776d1ee5858fc04d9362aa45e9bedd26b">
+        <dex dex="Z:\Android\LearnMeApp\app\build\intermediates\pre-dexed\debug\library-1.0.17-fc77d5ac580a0ec78fa28b5b8df6c02d7918d637.jar" />
+    </item>
+    <item
+        jar="Z:\Android\LearnMeApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\libs\internal_impl-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="Z:\Android\LearnMeApp\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.1-9a7bd89ac904c92e2309075bab6c0110b60fa007.jar" />
+    </item>
+    <item
+        jar="Z:\Android\LearnMeApp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
-        <dex dex="/Users/evaN/Desktop/LearnMeAppGit/LearnMeApp/app/build/intermediates/pre-dexed/debug/classes-13ac8a433d4d98a545018697f13e4211dcd06966.jar" />
+        <dex dex="Z:\Android\LearnMeApp\app\build\intermediates\pre-dexed\debug\classes-2db047e4afedd93bdbbbd297c0551261359b1eb4.jar" />
     </item>
     <item
-        jar="/Users/evaN/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.1/support-annotations-22.2.1.jar"
+        jar="Z:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.1\support-annotations-22.2.1.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
-        <dex dex="/Users/evaN/Desktop/LearnMeAppGit/LearnMeApp/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.1-c3df0cdf186fd1e3175f4795132c4622e7377363.jar" />
+        <dex dex="Z:\Android\LearnMeApp\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.1-2e174775849fb494a9fc54db90c2104f12f2e5d0.jar" />
     </item>
 
 </items>
