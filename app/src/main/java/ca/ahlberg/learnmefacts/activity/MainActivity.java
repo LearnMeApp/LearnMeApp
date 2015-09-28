@@ -21,6 +21,9 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Perform action on click
+                Intent i = new Intent(MainActivity.this, MyCollectionActivity.class);
+                // Starts TargetActivity
+                startActivity(i);
             }
         });
 

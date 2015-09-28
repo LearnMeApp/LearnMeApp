@@ -28,6 +28,7 @@
     <color name="bg_login">#26ae90</color>
     <color name="bg_main">#428bca</color>
     <color name="bg_register">#2e3237</color>
+    <color name="blue_bg">#0d243c</color>
     <!-- From: file:/Z:/Android/LearnMeApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
@@ -234,6 +235,7 @@
     <string name="btn_login">LOGIN</string>
     <string name="btn_logout">LOGOUT</string>
     <string name="btn_register">REGISTER</string>
+    <string name="hello_world">Hello world!</string>
     <string name="hint_email">Email</string>
     <string name="hint_name">Fullname</string>
     <string name="hint_password">Password</string>
@@ -244,6 +246,8 @@
     <!-- From: file:/Z:/Android/LearnMeApp/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_my_collection">MyCollectionActivity</string>
+    <string name="title_activity_random_fact">RandomFactActivity</string>
     <string name="title_activity_splash">SplashActivity</string>
     <string name="welcome">Welcome</string>
     <!-- From: file:/Z:/Android/LearnMeApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
