@@ -25,8 +25,8 @@
     <color name="background_material_light">#ffeeeeee</color>
     <!-- From: file:/Z:/Android/LearnMeApp/app/src/main/res/values/colors.xml -->
     <eat-comment/>
-    <color name="bg_login">#26ae90</color>
-    <color name="bg_main">#428bca</color>
+    <color name="bg_login">#00C475</color>
+    <color name="bg_main">#1193FF</color>
     <color name="bg_register">#2e3237</color>
     <color name="blue_bg">#0d243c</color>
     <!-- From: file:/Z:/Android/LearnMeApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
@@ -39,9 +39,9 @@
     <color name="bright_foreground_material_light">@android:color/black</color>
     <!-- From: file:/Z:/Android/LearnMeApp/app/src/main/res/values/colors.xml -->
     <eat-comment/>
-    <color name="btn_login">#26ae90</color>
+    <color name="btn_login">#00C475</color>
     <color name="btn_login_bg">#eceef1</color>
-    <color name="btn_logut_bg">#ff6861</color>
+    <color name="btn_logut_bg">#FF4C00</color>
     <!-- From: file:/Z:/Android/LearnMeApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <color name="button_material_dark">#ff5a595b</color>

@@ -33,6 +33,16 @@ public class SQLiteHandler extends SQLiteOpenHelper {
     private static final String KEY_UID = "uid";
     private static final String KEY_CREATED_AT = "created_at";
 
+    private static final String FACT_TABLE = "facts";
+    private static final String FACT_ID = "id";
+    private static final String FACT_CATEGORY = "category";
+    private static final String FACT_SUBCATEGORY = "subcategory";
+    private static final String FACT_FACT = "FACT";
+
+    private static final String MYC_TABLE = "mycollection";
+    private static final String MYC_FACTID = "factid";
+    private static final String MYC_USERID = "userid";
+
     public SQLiteHandler(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
@@ -46,6 +56,15 @@ public class SQLiteHandler extends SQLiteOpenHelper {
                 + KEY_CREATED_AT + " TEXT" + ")";
         db.execSQL(CREATE_LOGIN_TABLE);
 
+        String CREATE_FACT_TABLE = "CREATE TABLE " + FACT_TABLE + "("
+                + FACT_ID + " INTEGER PRIMARY KEY," + FACT_CATEGORY + " TEXT,"
+                + FACT_SUBCATEGORY + " TEXT," + FACT_FACT + " TEXT" + ")";
+        db.execSQL(CREATE_FACT_TABLE);
+
+        String CREATE_MYC_TABLE = "CREATE TABLE " + MYC_TABLE + "("
+                + MYC_FACTID + " INTEGER PRIMARY KEY," + MYC_USERID + " INTEGER PRIMARY KEY" + ")";
+        db.execSQL(CREATE_MYC_TABLE);
+
         Log.d(TAG, "Database tables created");
     }
 
@@ -54,6 +73,8 @@ public class SQLiteHandler extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         // Drop older table if existed
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_USER);
+        db.execSQL("DROP TABLE IF EXISTS " + FACT_TABLE);
+        db.execSQL("DROP TABLE IF EXISTS " + MYC_TABLE);
 
         // Create tables again
         onCreate(db);
@@ -76,6 +97,31 @@ public class SQLiteHandler extends SQLiteOpenHelper {
         db.close(); // Closing database connection
 
         Log.d(TAG, "New user inserted into sqlite: " + id);
+    }
+
+    public void addFact(String category, String subcategory, String fact) {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues values = new ContentValues();
+        values.put(FACT_CATEGORY, category);
+        values.put(FACT_SUBCATEGORY, subcategory);
+        values.put(FACT_FACT, fact);
+
+        long id = db.insert(FACT_TABLE, null, values);
+
+        Log.d(TAG, "New fact inserted: " + id);
+    }
+
+    public void addtoCollection(int factid, int userid){
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues values = new ContentValues();
+        values.put(MYC_FACTID, factid);
+        values.put(MYC_USERID, userid);
+
+        long id = db.insert(MYC_TABLE, null, values);
+
+        Log.d(TAG, "Fact inserted into Collection " + id);
     }
 
     /**
@@ -103,8 +149,29 @@ public class SQLiteHandler extends SQLiteOpenHelper {
         return user;
     }
 
+    public HashMap<String, String> getFact() {
+        HashMap<String, String> fact = new HashMap<String, String>();
+        String selectQuery = "SELECT * FROM " + FACT_TABLE;
+
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);
+
+        cursor.moveToFirst();
+        if (cursor.getCount() > 0) {
+            fact.put("category", cursor.getString(1));
+            fact.put("subcategory", cursor.getString(2));
+            fact.put("fact", cursor.getString(3));
+        }
+        cursor.close();
+        db.close();
+
+        Log.d(TAG, "Fetching fact from Sqlite: " + fact.toString());
+
+        return fact;
+    }
+
     /**
-     * Re crate database Delete all tables and create them again
+     * Recreate database Delete all tables and create them again
      * */
     public void deleteUsers() {
         SQLiteDatabase db = this.getWritableDatabase();
@@ -113,6 +180,15 @@ public class SQLiteHandler extends SQLiteOpenHelper {
         db.close();
 
         Log.d(TAG, "Deleted all user info from sqlite");
+    }
+
+    public void deleteFact() {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        db.delete(FACT_TABLE, null, null);
+        db.close();
+
+        Log.d(TAG, "Deleted all facts from sqlite");
     }
 
 }
